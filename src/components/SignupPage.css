@@ -1,0 +1,131 @@
+:root {
+    --mainBlue: #03a9f4;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  section {
+    width: 350px;
+    height: 600px;
+    background-color: var(--mainBlue);
+  }
+  .main {
+    width: 310px;
+    height: 560px;
+    margin-left: 20px;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #222;
+  }
+  .main h1 {
+    text-align: center;
+    padding: 10px;
+  }
+  .main .one,
+  .main .two,
+  .main .three,
+  .main .four {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main .one::before,
+  .main .two::before,
+  .main .three::before,
+  .main .four::before {
+     left: 10%;
+     top: 3%;
+     margin-top:  10px;
+     font-family: 'Font Awesome 5 Free';
+     font-weight: 700;
+     font-size: 13px;
+     color: #777;
+  }
+  .one::before {
+     content: "\f007";
+     position: absolute;
+  }
+  .two::before {
+      content: "\f2b6";
+      position: absolute;
+  }
+  .three::before,
+  .four::before {
+      content: "\f023";
+      position: absolute;
+  }
+  .main div input {
+    width: 210px;
+    position: relative;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    caret-color: var(--mainBlue);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #CCC;
+    transition: 0.3s ease-in-out;
+  }
+  .main div input:focus {
+    border-bottom: 2px solid var(--mainBlue);
+  }
+  .main .btn {
+    display: flex;
+    justify-content: center;
+  }
+  .main button {
+    width: 220px;
+    background-color: var(--mainBlue);
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.35s ease-in-out;
+  }
+  .main button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: inherit;
+    transition: 0.35s ease-in-out;
+  }
+  .main button:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: inherit;
+    transition: 0.35s ease-in-out;
+  }
+  .main button:hover {
+    background-color: #007ac1;
+    width: 240px;
+  }
+  .main button:hover::before,
+  .main button:hover::after {
+    width: 100%;
+  }
+  .main h5,
+  .main h4 {
+    text-align: center;
+  }
+  .main h5 a {
+    color: #2196F3;
+    text-decoration: none;
+  }
+  hr {
+    border-top: 2px dotted #CCC;
+    width: 80%;
+    margin-top: -10px;
+  }
